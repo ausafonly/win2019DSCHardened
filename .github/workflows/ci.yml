@@ -28,7 +28,7 @@ jobs:
         run: Install-Module 'PSDscResources' -Confirm:$false -Force -Verbose
       - name: Configure DSC Local Configuration Manager
         shell: powershell
-        run: .\lcmconfig.ps1
+        run: Set-DSCLocalConfigurationManager -Path .\lcmconfig.ps1
       - name: Compiling and applying DSC configuration
         shell: powershell
         run: .\2019config.ps1

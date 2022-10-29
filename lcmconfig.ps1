@@ -10,4 +10,4 @@ configuration LCMConfig
         }
     }
 }
-LCMConfig -OutputPath .
+LCMConfig -OutputPath $PSScriptroot

@@ -1,6 +1,5 @@
 Configuration Server2019
 {
-    Import-DscResource –ModuleName 'PSDesiredStateConfiguration'
     Node localhost
 
     

@@ -110,4 +110,4 @@ Configuration Server2019
 }
 
 Server2019 -OutputPath .
-Start-DscConfiguration -ComputerName localhost -Path . -Wait -Verbose -Force
+Start-DscConfiguration -ComputerName localhost -Path D:\a\win2019DSCHardened\win2019DSCHardened\Server2019 -Wait -Verbose -Force

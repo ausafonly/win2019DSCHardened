@@ -110,4 +110,4 @@ Configuration Server2019
 }
 
 Server2019 -OutputPath .
-Start-DscConfiguration -Path . -Wait -Verbose -Force
+Start-DscConfiguration -ComputerName localhost -Path . -Wait -Verbose -Force

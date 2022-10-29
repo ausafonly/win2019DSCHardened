@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: TestBuild
+name: Install 
 
 # Controls when the workflow will run
 on:
@@ -23,5 +23,5 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: powershell.exe -command write-host "Testing windows runner" -ForegroundColor Yellow
+      - name: Installing Windows Terminal
+        run: choco install microsoft-windows-terminal -y

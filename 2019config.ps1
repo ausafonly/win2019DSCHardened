@@ -1,5 +1,6 @@
 Configuration Server2019
 {
+    Import-DSCResource -ModuleName PSDscResources
     Node localhost
 
     

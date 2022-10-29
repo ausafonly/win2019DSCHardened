@@ -6,7 +6,7 @@ configuration LCMConfig
         Settings
         {
             RefreshMode = 'Push'
-            ConfigurationMode = ApplyAndAutoCorrect
+            ConfigurationMode = 'ApplyAndAutoCorrect'
         }
     }
 }

@@ -1,6 +1,7 @@
 Configuration Server2019
 {
     Import-DSCResource -ModuleName PSDscResources -Name Registry -ModuleVersion 2.12.0.0
+    Node localhost
     {
         
         Registry SpectreVariant2 {
@@ -109,4 +110,4 @@ Configuration Server2019
 }
 
 Server2019 -OutputPath .
-Start-DscConfiguration -Path D:\a\win2019DSCHardened\win2019DSCHardened\Server2019 -Wait -Verbose -Force
+Start-DscConfiguration -Path . -Wait -Verbose -Force

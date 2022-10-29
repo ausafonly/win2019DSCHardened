@@ -25,4 +25,5 @@ jobs:
       # Runs a single command using the runners shell
       - name: Compiling and applying DSC config
         shell: pwsh
-        run: .\2019config.ps1
+        #run: .\2019config.ps1
+        run: Get-DSCResource

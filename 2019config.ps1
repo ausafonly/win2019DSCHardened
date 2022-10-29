@@ -109,5 +109,5 @@ Configuration Server2019
     }
 }
 
-Server2019 -OutputPath .\dscconfig
-Start-DscConfiguration -Path D:\a\win2019DSCHardened\win2019DSCHardened\dscconfig -Wait -Verbose -Force
+Server2019 -OutputPath D:\DSCConfig
+Start-DscConfiguration -Path D:\DSCConfig -Wait -Verbose -Force

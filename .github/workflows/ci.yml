@@ -25,7 +25,5 @@ jobs:
       # Runs a single command using the runners shell
       - name: Installing Module containing DSC resources
         shell: pwsh
-        run: Install-Module 'PSDscResources' -Verbose
+        run: Install-Module 'PSDscResources' -Confirm:$false -Force -Verbose
       - name: Compiling and applying DSC configuration
-        shell: pwsh
-        run: .\2019config.ps1

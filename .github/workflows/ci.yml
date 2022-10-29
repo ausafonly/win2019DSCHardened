@@ -28,7 +28,7 @@ jobs:
         run: Install-Module 'PSDscResources' -Force -Confirm:$false -Verbose
       - name: Configuring Winrm Service
         shell: powershell
-        run: winrm quickconfig
+        run: winrm quickconfig -quiet
       - name: Configure DSC Local Configuration Manager
         shell: powershell
         run: .\lcmconfig.ps1

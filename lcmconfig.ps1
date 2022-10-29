@@ -10,4 +10,4 @@ configuration LCMConfig
         }
     }
 }
-LCMConfig
+LCMConfig -OutputPath .

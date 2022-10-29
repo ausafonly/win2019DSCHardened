@@ -26,6 +26,9 @@ jobs:
       - name: Installing Module containing DSC resources
         shell: powershell
         run: Install-Module 'PSDscResources' -Force -Confirm:$false -Verbose
+      - name: Configuring Winrm Service
+        shell: powershell
+        run: winrm quickconfig
       - name: Configure DSC Local Configuration Manager
         shell: powershell
         run: .\lcmconfig.ps1

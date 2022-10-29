@@ -24,4 +24,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Installing Windows Terminal
-        run: choco install microsoft-windows-terminal -y
+        run: Get-WindowsFeature

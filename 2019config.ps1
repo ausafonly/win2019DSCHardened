@@ -109,5 +109,5 @@ Configuration Server2019
     }
 }
 
-Server2019 -OutputPath .
-Start-DscConfiguration -Path . -Wait -Verbose -Force
+Server2019 -OutputPath .\dscconfig
+Start-DscConfiguration -Path .\dsconfig -Wait -Verbose -Force

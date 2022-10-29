@@ -35,10 +35,6 @@ jobs:
         shell: powershell
         run: .\lcmconfig.ps1
       
-      - name: Get Partition Information on Server
-        shell: powershell
-        run: Get-Partition
-      
       - name: Compiling and applying DSC configuration
         shell: powershell
         run: .\2019config.ps1

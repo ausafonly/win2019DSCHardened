@@ -1,9 +1,7 @@
 Configuration Server2019
 {
-    Import-DSCResource -ModuleName PSDesiredStateConfiguration
+    Import-DSCResource -ModuleName PSDscResources
     Node localhost
-
-    
     {
         
         Registry SpectreVariant2 {

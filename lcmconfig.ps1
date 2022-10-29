@@ -10,5 +10,5 @@ configuration LCMConfig
         }
     }
 }
-LCMConfig -OutputPath .
-Set-DSCLocalConfigurationManager -Path D:\a\win2019DSCHardened\win2019DSCHardened\LCMConfig
+LCMConfig -OutputPath D:\LCMConfig
+Set-DSCLocalConfigurationManager -Path D:\LCMConfig

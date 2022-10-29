@@ -25,7 +25,7 @@ jobs:
       # Runs a single command using the runners shell
       - name: Installing Module containing DSC resources
         shell: powershell
-        run: Install-Module 'PSDscResources' -Confirm:$false -Verbose
+        run: Install-Module 'PSDscResources' -Force -Confirm:$false -Verbose
       - name: Configure DSC Local Configuration Manager
         shell: powershell
         run: Set-DSCLocalConfigurationManager -Path .

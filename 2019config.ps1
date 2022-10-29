@@ -1,6 +1,6 @@
 Configuration Server2019
 {
-    Import-DSCResource -ModuleName PSDscResources -SkipEditionCheck
+    Import-DSCResource -ModuleName PSDesiredStateConfiguration
     Node localhost
 
     
@@ -108,14 +108,6 @@ Configuration Server2019
             ValueData = '1'
             ValueType = 'DWord'   
         }
-
-        Group Admin {
-            GroupName        = 'Administrators'
-            Ensure           = 'Present'
-            Credential       = $DomainCredential
-            MemberstoInclude = @('dhdom1\Domain Admins', 'dhdom1\Security Role Windows Server Support')
-        }
-
     }
 }
 

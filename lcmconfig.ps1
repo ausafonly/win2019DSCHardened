@@ -10,4 +10,5 @@ configuration LCMConfig
         }
     }
 }
-LCMConfig -OutputPath $PSScriptroot
+LCMConfig -OutputPath .
+Set-DSCLocalConfigurationManager -Path .

@@ -27,3 +27,5 @@ jobs:
         shell: pwsh
         run: Install-Module 'PSDscResources' -Confirm:$false -Force -Verbose
       - name: Compiling and applying DSC configuration
+        shell: pwsh
+        run: .\2019config.ps1

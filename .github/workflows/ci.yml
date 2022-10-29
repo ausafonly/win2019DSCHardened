@@ -23,5 +23,6 @@ jobs:
       - uses: actions/checkout@v3
 
       # Runs a single command using the runners shell
-      - name: Installing Windows Terminal
-        run: Get-WindowsFeature
+      - name: Installing Windows File Server Feature
+        shell: pwsh
+        run: Install-WindowsFeature -Name FS-FileServer -Verbose

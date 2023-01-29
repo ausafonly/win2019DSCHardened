@@ -19,7 +19,6 @@ Configuration Server2019
             ValueData = '3'
             ValueType = 'DWORD'
         }
-
         Registry IE-HardeningFeatureControl {
             Ensure    = 'Present'
             Key       = 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Internet Explorer\Main\FeatureControl\'
